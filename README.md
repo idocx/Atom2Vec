@@ -35,7 +35,7 @@ Building matrix  -- Complete!
 SVD -- Complete!
 ```
 
-Also, this package contains a dataset, which was obtain from [Material Project](https://materialsproject.org/) using   ```GetMP.py```. The raw response is stored in ```string_2.json``` and ```string_3.json```. Then the response is further processed by ```Preprocess.py```, whose result is saved to ```string.json``` for further use.
+Also, this package contains a dataset, which was obtained from [Material Project](https://materialsproject.org/) using  ```GetMP.py```. The raw response is stored in ```string_2.json``` and ```string_3.json```. Then the response is further processed by ```Preprocess.py```, whose result is saved to ```string.json``` for further use.
 
 ## Output File
 The output is kept in ```atoms_vec.txt``` and ```atoms_index.txt```.
