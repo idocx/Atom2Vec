@@ -55,5 +55,5 @@ python Atom2Vec
 If the program can run normally, it will exit with no errors raised.
 
 ## Result
-We can calculate cosine distance to quantify similarity between each atoms. Below is the plot of atom similarity.
+We can calculate cosine distance to quantify similarity between every atom. Below is the plot of atom similarity.
 ![similarity](./similarity.svg)
