@@ -50,7 +50,7 @@ class EnvsMat:
             cnt += 1
             if cnt % 10000 == 0:
                 print("\rGenerating index {}/{}".format(cnt, len(names)), end="")
-        print("\rGenerating index {}/{} -- Completed!".format(cnt, len(names)))
+        print("\rGenerating index {}/{} -- Complete!".format(cnt, len(names)))
         
         self.atoms = list(self.atoms)
         self.atoms.sort()
