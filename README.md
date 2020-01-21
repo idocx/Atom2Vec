@@ -20,7 +20,7 @@ pip install scipy numpy requests
 ```
 
 ## How To Use
-```python
+```python3
 from Atom2Vec import Atom2Vec
 
 # data_file: path to the dataset file
@@ -30,7 +30,7 @@ atoms_vec.saveAll()
 ```
 Output:
 ```
-Generating index 77402/77402 -- Completed!
+Generating index 77402/77402 -- Complete!
 Building matrix  -- Complete!
 SVD -- Complete!
 ```
