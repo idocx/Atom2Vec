@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "atom2vec"
+version = "1.0.0"
+description = "Compute atom vector from material strings"
+authors = ["idocx"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+numpy = "^1.20.3"
+tqdm = "^4.61.1"
+pymatgen = "^2022.0.8"
+scipy = "^1.7.0"
+sklearn = "^0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
