@@ -1,6 +1,7 @@
 # Atom2Vec
 A python implement of Atom2Vec: a simple way to describe atoms for machine learning
 
+(*Updated 06/21/2021*: We refactored the code with `pymatgen`, you can find old version in branch `old_version`. Now the code is fully typed and tested.)
 ## Background
 Atom2Vec is first proposed on [Zhou Q, Tang P, Liu S, et al. Learning atoms for materials discovery[J]. Proceedings of the National Academy of Sciences, 2018, 115(28): E6411-E6417.](https://www.pnas.org/content/115/28/E6411#page)
 
