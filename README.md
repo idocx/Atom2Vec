@@ -9,14 +9,8 @@ Atom2Vec is first proposed on [Zhou Q, Tang P, Liu S, et al. Learning atoms for 
 [![Atom Similarity Demo](docs/atom_sim_vis.png)](https://old.yuxingfei.com/src/similarity.html)
 
 ## Installation
-We use [`Poetry`](https://python-poetry.org) as our package manager tool. To install all the dependencies, run
 ```shell
-poetry install
-```
-
-Or you can also install all the packages manually in the [`pyproject.toml`](pyproject.toml) with `pip` or `conda`
-```shell
-pip install numpy tqdm pymatgen scipy sklearn
+pip install atom2vec
 ```
 
 ## Usage

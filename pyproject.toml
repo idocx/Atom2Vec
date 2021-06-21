@@ -1,9 +1,13 @@
 [tool.poetry]
 name = "atom2vec"
-version = "1.0.0"
-description = "Compute atom vector from material strings"
+version = "1.0.5"
+repository = "https://github.com/idocx/Atom2Vec"
+description = "A python implement of Atom2Vec: a simple way to describe atoms for machine learning"
 authors = ["idocx"]
 license = "MIT"
+keywords = ["material science", "machine learning"]
+exclude = ["tests/*"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.7,<3.10"

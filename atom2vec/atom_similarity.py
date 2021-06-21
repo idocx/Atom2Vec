@@ -101,7 +101,7 @@ class AtomSimilarity:
             err.args = ("Not such element as {}".format(item),)
             raise
 
-    def get_atom_similarity(self, item: Tuple[Union[Element, AnyStr, int], 2]) -> float:
+    def get_atom_similarity(self, item: Tuple[Union[Element, AnyStr, int]]) -> float:
         """
         Query cosine similarity of two elements
 
@@ -117,7 +117,7 @@ class AtomSimilarity:
         e_1, e_2 = get_el_sp(item[0]), get_el_sp(item[1])
         return self._atoms_similarity.get(e_1.name, {}).get(e_2.name, -1.)
 
-    def __getitem__(self, item: Tuple[Union[Element, AnyStr, int], 2]):
+    def __getitem__(self, item: Tuple[Union[Element, AnyStr, int]]):
         return self.get_atom_similarity(item)
 
     def as_dict(self):
