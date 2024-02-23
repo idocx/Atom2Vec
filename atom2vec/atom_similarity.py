@@ -33,10 +33,19 @@ class AtomSimilarity:
         return self._k_dim
 
     @classmethod
-    def _kwargs_from_structures(cls, structures: List[Structure], k_dim: int,
+    def _kwargs_from_structures(cls, structures: List[Union[Structure, Composition]], k_dim: int,
                                 max_elements: int) -> Dict[str, Any]:
-        compositions = [s.composition.reduced_composition for s in structures
-                        if 1 < len(s.composition.elements) <= max_elements]
+        
+        compositions = []
+
+        for s in structures:
+            if isinstance(s, Structure):
+                composition = s.composition.reduced_composition
+            else:
+                composition = s
+            
+            if 1 < len(composition.elements) <= max_elements:
+                compositions.append(composition)
 
         env_dict = defaultdict(list)
         elements_set: Set[Element] = set()

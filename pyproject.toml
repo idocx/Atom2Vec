@@ -1,24 +1,24 @@
-[tool.poetry]
+[project]
 name = "atom2vec"
-version = "1.0.5"
-repository = "https://github.com/idocx/Atom2Vec"
+version = "1.1.0"
 description = "A python implement of Atom2Vec: a simple way to describe atoms for machine learning"
-authors = ["idocx"]
-license = "MIT"
-keywords = ["material science", "machine learning"]
-exclude = ["tests/*"]
+authors = [
+    { name = "Yuxing Fei", email = "yuxingfei@berkeley.edu" }
+]
 readme = "README.md"
+license = { file = "LICENSE" } # Ensure there's a LICENSE file in your project root
+keywords = ["material science", "machine learning"]
 
-[tool.poetry.dependencies]
-python = ">=3.7,<3.10"
-numpy = "^1.20.3"
-tqdm = "^4.61.1"
-pymatgen = "^2022.0.8"
-scipy = "^1.7.0"
-sklearn = "^0.0"
+requires-python = ">=3.8"
+dependencies = [
+    "pymatgen>=2022.0.8",
+    "scikit-learn>=1.3.2",
+    "scipy >= 1.7.3",
+]
 
-[tool.poetry.dev-dependencies]
+[project.urls]
+Repository = "https://github.com/idocx/atom2vec"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
